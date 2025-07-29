@@ -1,79 +1,138 @@
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>V.E. BATIMENT</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>LP TOOL SOLUTIONS LLC</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #111827; line-height: 1.6; }
-    header, footer { background: #1f2937; color: white; text-align: center; padding: 30px; }
-    nav a { color: #fbbf24; margin: 0 12px; text-decoration: none; font-weight: 600; }
-    section { padding: 60px 20px; max-width: 1200px; margin: auto; text-align: center; }
-    h2 { color: #1f2937; margin-bottom: 20px; font-size: 2.4em; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-    .gallery img { width: 100%; border-radius: 8px; }
-    .contact-form input, .contact-form textarea {
-      width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#f4f6f8;
+      color:#333;
+      line-height:1.6;
     }
-    iframe { width: 100%; height: 300px; border: 0; border-radius: 8px; margin-top: 20px; }
+    header{
+      background:linear-gradient(135deg,#0f2027,#2c5364);
+      color:#fff;
+      text-align:center;
+      padding:100px 20px;
+    }
+    header h1{
+      font-size:3rem;
+      letter-spacing:2px;
+      margin-bottom:15px;
+    }
+    header p{
+      font-size:1.2rem;
+      opacity:0.9;
+    }
+    section{
+      max-width:1200px;
+      margin:50px auto;
+      padding:20px;
+    }
+    .flex{
+      display:flex;
+      gap:30px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .text, .image{
+      flex:1 1 45%;
+    }
+    .image img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    }
+    h2{
+      font-size:2rem;
+      color:#2c5364;
+      margin-bottom:15px;
+    }
+    .cta{
+      text-align:center;
+      margin:40px 0;
+    }
+    .cta a{
+      background:#2c5364;
+      color:#fff;
+      text-decoration:none;
+      padding:15px 35px;
+      border-radius:30px;
+      font-size:1rem;
+      transition:all 0.3s ease;
+    }
+    .cta a:hover{
+      background:#0f2027;
+    }
+    footer{
+      background:#0f2027;
+      color:#fff;
+      text-align:center;
+      padding:30px 20px;
+    }
+    footer p{margin:5px 0;}
+    @media(max-width:768px){
+      header h1{font-size:2.2rem;}
+      .flex .text, .flex .image{flex:1 1 100%;}
+    }
   </style>
 </head>
 <body>
+  <header>
+    <h1>LP TOOL SOLUTIONS LLC</h1>
+    <p>Innovative Solutions. Reliable Tools. Future-Ready Services.</p>
+  </header>
 
-<header>
-  <h1>V.E. BATIMENT</h1>
-  <nav>
-    <a href="#about">Présentation</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-    <a href="#map">Adresse</a>
-  </nav>
-</header>
+  <section>
+    <div class="flex">
+      <div class="text">
+        <h2>Who We Are</h2>
+        <p>LP TOOL SOLUTIONS LLC is a dynamic company based in Palm Beach Gardens, Florida, delivering high-quality tool solutions and services to empower businesses and individuals. We combine innovation and efficiency to meet the needs of our clients.</p>
+      </div>
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1596484556781-218525d3fdaa" alt="Who We Are">
+      </div>
+    </div>
+  </section>
 
-<section id="about">
-  <h2>Présentation</h2>
-  <p>Basée à Les Mureaux, V.E. BATIMENT est une entreprise spécialisée dans la maçonnerie générale et les gros travaux de construction. Grâce à une équipe qualifiée, nous réalisons des chantiers sur mesure en respectant les normes de qualité et de sécurité.</p>
-</section>
+  <section>
+    <div class="flex">
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1603921326210-6edd2d60ca68" alt="Vision">
+      </div>
+      <div class="text">
+        <h2>Our Vision</h2>
+        <p>Our vision is to shape the future of tool solutions by integrating smart technology and sustainable practices. We aspire to be the go-to partner for high-performance tools and unparalleled service.</p>
+      </div>
+    </div>
+  </section>
 
-<section id="services">
-  <h2>Nos Services</h2>
-  <p>Gros œuvre de bâtiment, travaux de maçonnerie, fondations, rénovation structurelle, et accompagnement personnalisé pour tous vos projets de construction.</p>
-</section>
+  <section>
+    <div class="flex">
+      <div class="text">
+        <h2>Why Choose Us</h2>
+        <p>At LP TOOL SOLUTIONS LLC, we focus on precision, reliability, and customer satisfaction. Our solutions are crafted to offer superior results, helping you stay ahead in an ever-changing industry.</p>
+      </div>
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1508898578281-774ac4893c0e" alt="Why Choose Us">
+      </div>
+    </div>
+  </section>
 
-<section id="gallery">
-  <h2>Galerie</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1570126681032-3a7c41f13b0d?auto=format&fit=crop&w=800&q=80" alt="chantier 1">
-    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="chantier 2">
-    <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80" alt="chantier 3">
+  <div class="cta">
+    <a href="mailto:contact@lptools.shop">Contact Us Today</a>
   </div>
-</section>
 
-<section id="contact">
-  <h2>Contactez-nous</h2>
-  <p>Email : contact@vebatiment.shop</p>
-  <p>Téléphone : +33 6 05 99 64 90</p>
-  <form class="contact-form">
-    <input type="text" placeholder="Nom">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Votre message"></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
-
-<section id="map">
-  <h2>Adresse</h2>
-  <p>66 Avenue du Maréchal Foch, 78130 Les Mureaux, France</p>
-  <iframe src="https://www.google.com/maps?q=66+Avenue+du+Mar%C3%A9chal+Foch,+Les+Mureaux,+France&output=embed" allowfullscreen loading="lazy"></iframe>
-</section>
-
-<footer>
-  &copy; 2025 V.E. BATIMENT — Tous droits réservés
-</footer>
-
+  <footer>
+    <p><strong>Email:</strong> contact@lptools.shop</p>
+    <p><strong>Phone:</strong> +1 346 358 2982</p>
+    <p><strong>Address:</strong> 9505 Minorca Way APT 203, Palm Beach Gardens, FL 33418, USA</p>
+    <p>&copy; 2025 LP TOOL SOLUTIONS LLC. All rights reserved.</p>
+  </footer>
 </body>
 </html>
